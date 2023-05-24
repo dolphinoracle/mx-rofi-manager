@@ -7,8 +7,8 @@
 # Vladimir O <vldoduv@yandex.ru>, 2022
 # Caarmi, 2022
 # Вячеслав Волошин <vol_vel@mail.ru>, 2022
-# Andrei Stepanov, 2022
 # Dolphin Oracle <dolphinoracle@gmail.com>, 2023
+# Andrei Stepanov, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,8 +17,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-02 14:28-0500\n"
 "PO-Revision-Date: 2022-11-18 00:46+0000\n"
-"Last-Translator: Dolphin Oracle <dolphinoracle@gmail.com>, 2023\n"
-"Language-Team: Russian (https://www.transifex.com/anticapitalista/teams/10162/ru/)\n"
+"Last-Translator: Andrei Stepanov, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/anticapitalista/teams/10162/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,14 @@ msgid ""
 "\n"
 "--Global: settings come from a separate file (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) and are applied to all themes. Rofi manager can edit these by changing the current theme to that file."
 msgstr ""
+"\n"
+"СПЕЦИФИЧНЫЕ И ГЛОБАЛЬНЫЕ НАСТРОЙКИ\n"
+"\n"
+"Настройки положения, размера и шрифта могут быть двух форматов:\n"
+"\n"
+"--Специфичные: настройки поступают непосредственно из файла <some name.rasi> со своими конкретными значениями. Менеджер Rofi может изменять специфические настройки тем пользователя (~/.config/rofi/themes/<some name.rasi>), но настройки тем Экстра и Системы могут быть изменены только с помощью текстового редактора.\n"
+"\n"
+"--Глобальные: настройки берутся из отдельного файла (~/.config/rofi/themes/mxrm-settings/mxrm-settings.rasi) и применяются ко всем темам. Менеджер Rofi может править их заменой текущей темы этим файлом."
 
 #: ../mx-rofi-manager:711
 msgid ""
@@ -81,11 +89,11 @@ msgstr ""
 
 #: ../mx-rofi-manager:935
 msgid "    X-Offset (- to left, + to right)"
-msgstr ""
+msgstr "    X-смещение (- влево, + вправо)"
 
 #: ../mx-rofi-manager:936
 msgid "    Y-Offset (- upwards, + downwards)"
-msgstr ""
+msgstr "    Y-смещение (- вверх, + вниз)"
 
 #: ../mx-rofi-manager:1155
 msgid "<b>Adjust the font of the current rofi window.</b>"
@@ -126,6 +134,8 @@ msgid ""
 "<b>Select appearance settings and theme to use</b> (double-click for "
 "preview)."
 msgstr ""
+"<b>Выберите настройки внешнего вида и тему для использования</b> (двойной "
+"щелчок для предпросмотра)."
 
 #: ../mx-rofi-manager:547
 msgid "<b>Select which tabs rofi should display</b>\\n"
@@ -234,6 +244,8 @@ msgid ""
 "If a theme does not display tabs, switch tabs with <i>Shift + Arrow</i> or "
 "<i>Ctrl + Tab</i>\\n"
 msgstr ""
+"Если тема не отображает вкладки, переключайте их с помощью <i>Shift + "
+"Стрелка</i> или <i>Ctrl + Tab</i>\\n"
 
 #: ../mx-rofi-manager:1362 ../mx-rofi-manager:1388
 msgid "Inactive Tab Background"
@@ -381,10 +393,13 @@ msgid ""
 "Sorry, the appearance settings for $ROFICURRENT can only be modified using "
 "global settings.\\n\\nWould you like to change to global settings?.\\n\\n"
 msgstr ""
+"Извините, настройки внешнего вида для $ROFICURRENT можно изменить только с "
+"помощью глобальных настроек.\\n\\nХотите перейти на глобальные "
+"настройки?.\\n\\n"
 
 #: ../mx-rofi-manager:476
 msgid "Specific settings will be used"
-msgstr ""
+msgstr "Будут использоваться определённые настройки"
 
 #. TEXTLOCMAIN2="$(eval_gettext 'The current appearance settings are
 #. <b>$TOGGLETEXTTRANS</b>\n')"
@@ -393,7 +408,7 @@ msgstr ""
 #: ../mx-rofi-manager:930 ../mx-rofi-manager:1157
 #, sh-format
 msgid "The current appearance settings are <b>$TOGGLETEXT</b>"
-msgstr ""
+msgstr "Текущие настройки внешнего вида — <b>$TOGGLETEXT</b>"
 
 #: ../mx-rofi-manager:297
 #, sh-format
@@ -401,6 +416,7 @@ msgid ""
 "The current theme is <b>$ROFICURRENT</b> and its settings are "
 "<b>$TOGGLETEXT</b>."
 msgstr ""
+"Текущая тема — <b>$ROFICURRENT</b>, и её настройки: <b>$TOGGLETEXT</b>."
 
 #: ../mx-rofi-manager:1485
 #, sh-format
